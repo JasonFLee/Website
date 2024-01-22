@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Intro | Mysite</title>
+  <link rel="stylesheet" href="stylesheets/resume.css">
+  <style>
+    body {
+      margin: 8px;
+      background-color: black;
+      overflow-x: hidden; /* Prevent horizontal scrolling on smaller screens */
+    }
+
+    /* Add your additional styles here */
+  </style>
+</head>
+<body>
+
+  <div>
+    <!-- Put this first so it draws behind next two divs -->
+    <div style="position: fixed; top: 10%; left: 5%; right: 5%; bottom: 5%;">
+      <iframe style="border: 0; width: 100%; height: 100%;" src="spline.html"></iframe>
+    </div>
+    
+    <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+      <div style="color: rgb(102, 56, 152)" class="expensiveText">Jason Lee</div>
+      <div style="color: rgb(212, 53, 201)" class="expensiveText">Portfolio</div>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 15px; color: white;">
+      <div style="text-align: center;">Interactive Visual May Take a Second to Load</div>
+      <div style="text-align: center;">(Move Mouse To Shake)</div>
+    </div>
+
+    <a href="portfolio.html" target="_self" style="position: fixed; bottom: 5%; left: 5%; right: 5%; text-align: center; text-decoration: none; color: white; display: block;">
+      <span class="">Click To Enter</span>
+    </a>
+  </div>
+
+</body>
+</html>
