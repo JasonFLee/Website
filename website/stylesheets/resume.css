@@ -1,0 +1,29 @@
+.expensiveText {
+font-family: impact, impact-w01-2010, impact-w02-2010, impact-w10-2010, sans-serif;
+font-feature-settings: normal;
+font-kerning: auto;
+font-optical-sizing: auto;
+font-size: 79px;
+font-stretch: 100%;
+}
+
+
+.imageStyle {                             
+	width:  min( 24vw, calc(49vh - 58px));  /*space around minus sign is important*/
+	height: min( 24vw, calc(49vh - 58px));  /* the 58px is the size of that last image etc */
+}
+.imageStyle:hover {
+    filter: blur(4px);
+}
+.videoInsert {
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+}
