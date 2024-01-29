@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Intro | Mysite</title>
+  <link rel="stylesheet" href="stylesheets/resume.css">
+  <style>
+    body {
+      margin: 8px;
+      background-color: black;
+      overflow-x: hidden; /* Prevent horizontal scrolling on smaller screens */
+    }
+
+    /* Add your additional styles here */
+    .hidden {
+      display: none;
+    }
+
+    #hourglass {
+      width: 50px; /* Set the width as needed */
+      height: 50px; /* Set the height as needed */
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <!-- Hourglass image -->
+    <img id="hourglass" src="Hourglass_902x.webp" alt="Hourglass" />
+
+    <!-- Put this first so it draws behind the next two divs -->
+    <div style="position: fixed; top: 10%; left: 5%; right: 5%; bottom: 5%;">
+      <iframe id="splineFrame" style="border: 0; width: 100%; height: 100%;" src="spline.html" onload="hideHourglass()"></iframe>
+    </div>
+    
+    <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+      <div style="color: rgb(102, 56, 152)" class="expensiveText">Jason Lee</div>
+      <div style="color: rgb(212, 53, 201)" class="expensiveText">Portfolio</div>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 15px; color: white;">
+     
+    </div>
+
+    <a href="portfolio.html" target="_self" id="enterButton" class="hidden" style="position: fixed; bottom: 5%; left: 5%; right: 5%; text-align: center; text-decoration: none; color: white; display: block;">
+      <span class="">Click To Enter</span>
+    </a>
+  </div>
+
+  <script>
+    // Function to hide the hourglass and show the button when the spline is loaded
+    function hideHourglass() {
+      setTimeout(function() {
+        document.getElementById('hourglass').style.display = 'none';
+        document.getElementById('enterButton').classList.remove('hidden');
+      }, 2000); // 6 seconds (4 seconds originally + additional 2 seconds)
+    }
+  </script>
+
+</body>
+</html>
